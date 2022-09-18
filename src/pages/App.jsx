@@ -1,10 +1,9 @@
-import {
-    Link
-} from "react-router-dom"
+import React from "react";
+import Navbar from "../components/Sidebar";
 
 const App = () => {
     return (
-        <Link to="/t">Test</Link>
+        <Navbar />
     );
 }
 

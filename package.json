@@ -4,6 +4,7 @@
     "Zuygui <maxime@halbitte.fr>",
     "Xori <xorisuper@gmail.com>"
   ],
+  "license": "GPL-3.0",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -16,7 +17,8 @@
     "@tauri-apps/api": "^1.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.0"
+    "react-router-dom": "^6.4.0",
+    "react-sidebar-ui": "^1.2.1"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^1.1.0",
