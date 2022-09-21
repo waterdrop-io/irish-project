@@ -57,9 +57,11 @@
       {
         "fullscreen": false,
         "height": 720,
+        "minHeight": 720,
         "resizable": true,
         "title": "The Irish project",
-        "width": 1080
+        "width": 1080,
+        "minWidth": 1080
       }
     ]
   }
