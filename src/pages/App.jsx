@@ -13,7 +13,7 @@ const App = () => {
             <Navbar />
             <div style={{
                 color: 'black',
-                textAlign: "center"
+                textAlign: "center",
             }}>
                 <h1>Welcome to the Irish Project</h1>
                 <br />
@@ -23,12 +23,13 @@ const App = () => {
                 </h3>
                 <br />
                 <br />
-                <img src="https://img.shields.io/github/license/waterdrop-io/irish-project?style=for-the-badge" alt="licence" /> <br />
-                <img src="https://img.shields.io/github/v/release/waterdrop-io/irish-project?include_prereleases&style=for-the-badge" alt="release" />
                 <br />
-                <h3>
-                    This code is protected by the GPL-3.0 <br />licence provided by Github. <br />
-                </h3>
+                <br />
+                <br />
+
+                <p>
+                    <img src="/map.png" width={250} height={300} alt="map" />
+                </p>
             </div>
 
         </div>

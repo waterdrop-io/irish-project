@@ -12,9 +12,9 @@ const Instruments = () => {
                 <div class="cards">
                     <div class="card card-1">
                         <div class="card__icon"><i class="fa-solid fa-drum"></i></div>
-                        <h2 class="card__title">Bodhran</h2>
+                        <h2 class="card__title">Bouzouki</h2>
                         <p class="card__apply">
-                            <Link className="card__link" to="/bodhran">let's go <i class="fas fa-arrow-right"></i></Link>
+                            <Link className="card__link" to="/bouzouki">let's go <i class="fas fa-arrow-right"></i></Link>
                         </p>
                     </div>
                     <div class="card card-2">
