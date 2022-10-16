@@ -1,42 +1,43 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import ReactPlayer from "react-player";
 
 const TinWhistle = () => {
     const questions = [
 		{
-			questionText: 'What is the capital of France?',
+			questionText: 'What type is this instrument?',
 			answerOptions: [
-				{ answerText: 'New York', isCorrect: false },
-				{ answerText: 'London', isCorrect: false },
-				{ answerText: 'Paris', isCorrect: true },
-				{ answerText: 'Dublin', isCorrect: false },
+				{ answerText: 'Brass', isCorrect: false },
+				{ answerText: 'Percussion', isCorrect: false },
+				{ answerText: 'Wood wind', isCorrect: true },
+				{ answerText: 'Stringes', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'Who is CEO of Tesla?',
+			questionText: 'Who mass-produced it?',
 			answerOptions: [
 				{ answerText: 'Jeff Bezos', isCorrect: false },
-				{ answerText: 'Elon Musk', isCorrect: true },
+				{ answerText: 'Robert Clarke', isCorrect: true },
 				{ answerText: 'Bill Gates', isCorrect: false },
 				{ answerText: 'Tony Stark', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'The iPhone was created by which company?',
+			questionText: 'How many holes are there?',
 			answerOptions: [
-				{ answerText: 'Apple', isCorrect: true },
-				{ answerText: 'Intel', isCorrect: false },
-				{ answerText: 'Amazon', isCorrect: false },
-				{ answerText: 'Microsoft', isCorrect: false },
+				{ answerText: '6', isCorrect: true },
+				{ answerText: '3', isCorrect: false },
+				{ answerText: '2', isCorrect: false },
+				{ answerText: '9', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'How many Harry Potter books are there?',
+			questionText: 'What category of instrument is it in?',
 			answerOptions: [
-				{ answerText: '1', isCorrect: false },
-				{ answerText: '4', isCorrect: false },
-				{ answerText: '6', isCorrect: false },
-				{ answerText: '7', isCorrect: true },
+				{ answerText: 'Drum', isCorrect: false },
+				{ answerText: 'Violin', isCorrect: false },
+				{ answerText: 'French horn', isCorrect: false },
+				{ answerText: 'Flutes', isCorrect: true },
 			],
 		},
 	];
@@ -61,6 +62,15 @@ const TinWhistle = () => {
         <>
             <Link to="/instruments" style={{ color: "white"}} >% Back to Instruments</Link>
 			<br />
+			<h1  style={{ color: "black" }}>Audio</h1>
+			<ReactPlayer
+				url="/tin.mp3"
+				width="400px"
+				height="50px"
+				playing={false}
+				controls={true}
+			/>
+			<br/>
 			<h1 style={{ color: "black" }}>Quiz:</h1>
             <div className='quiz'>
                 {showScore ? (
@@ -83,6 +93,16 @@ const TinWhistle = () => {
                     </>
                 )}
 		    </div>
+			<h1  style={{ color: "black" }}>Vocab</h1>
+			<p style={{ color: "black" }}>
+				diatonic = diatonique, qui peut jouer les deux tons majeurs et leurs gammes relatives <br/>
+				woodwind = A vent(instrument) <br/>
+				affordable = abbordable <br/>
+				hole = trou <br/>
+				century = siècle <br/>
+			</p>
+			<br/>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Tinwhistles.jpg" />
         </>
     );
 }

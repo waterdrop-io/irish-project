@@ -1,42 +1,43 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import ReactPlayer from "react-player";
 
 const UileannPipe = () => {
     const questions = [
 		{
-			questionText: 'What is the capital of France?',
+			questionText: 'What was its first name?',
 			answerOptions: [
-				{ answerText: 'New York', isCorrect: false },
-				{ answerText: 'London', isCorrect: false },
-				{ answerText: 'Paris', isCorrect: true },
-				{ answerText: 'Dublin', isCorrect: false },
+				{ answerText: 'Henri IV', isCorrect: false },
+				{ answerText: 'James Bond', isCorrect: false },
+				{ answerText: 'Union Pipes', isCorrect: true },
+				{ answerText: 'SpaceX', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'Who is CEO of Tesla?',
+			questionText: 'How is it played?',
 			answerOptions: [
-				{ answerText: 'Jeff Bezos', isCorrect: false },
-				{ answerText: 'Elon Musk', isCorrect: true },
-				{ answerText: 'Bill Gates', isCorrect: false },
-				{ answerText: 'Tony Stark', isCorrect: false },
+				{ answerText: 'Dancing', isCorrect: false },
+				{ answerText: 'Sitting', isCorrect: true },
+				{ answerText: 'Smoking', isCorrect: false },
+				{ answerText: 'Running', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'The iPhone was created by which company?',
+			questionText: 'When was it developed?',
 			answerOptions: [
-				{ answerText: 'Apple', isCorrect: true },
-				{ answerText: 'Intel', isCorrect: false },
-				{ answerText: 'Amazon', isCorrect: false },
-				{ answerText: 'Microsoft', isCorrect: false },
+				{ answerText: '18th century', isCorrect: true },
+				{ answerText: '11th century', isCorrect: false },
+				{ answerText: '7th century', isCorrect: false },
+				{ answerText: '1th century', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'How many Harry Potter books are there?',
+			questionText: 'What is its Scottish name?',
 			answerOptions: [
-				{ answerText: '1', isCorrect: false },
-				{ answerText: '4', isCorrect: false },
-				{ answerText: '6', isCorrect: false },
-				{ answerText: '7', isCorrect: true },
+				{ answerText: 'Panflute', isCorrect: false },
+				{ answerText: 'Clarinet', isCorrect: false },
+				{ answerText: 'Tuba', isCorrect: false },
+				{ answerText: 'Bagpipe', isCorrect: true },
 			],
 		},
 	];
@@ -61,6 +62,15 @@ const UileannPipe = () => {
         <>
             <Link to="/instruments" style={{ color: "white"}} >% Back to Instruments</Link>
 			<br />
+			<h1  style={{ color: "black" }}>Audio</h1>
+			<ReactPlayer
+				url="/uilleann.mp3"
+				width="400px"
+				height="50px"
+				playing={false}
+				controls={true}
+			/>
+			<br/>
 			<h1 style={{ color: "black" }}>Quiz:</h1>
             <div className='quiz'>
                 {showScore ? (
@@ -83,6 +93,18 @@ const UileannPipe = () => {
                     </>
                 )}
 		    </div>
+			<br/>
+			<h1  style={{ color: "black" }}>Vocab</h1>
+			<p style={{ color: "black" }}>
+				bagpipe = cornemuse <br/>
+				seated = assis <br/>
+				influenced = influencé <br/>
+				narrate = conter(une histoire; une chanson) <br/>
+				bellows = souflet <br/>
+				sing = chanter <br/>
+			</p>
+			<br/>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/SeamusEnnis.jpg/280px-SeamusEnnis.jpg" />
         </>
     );
 }

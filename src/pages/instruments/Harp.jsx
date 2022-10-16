@@ -61,6 +61,15 @@ const Harp = () => {
         <>
             <Link to="/instruments" style={{ color: "white"}} >% Back to Instruments</Link>
 			<br />
+			<h1  style={{ color: "black" }}>Audio</h1>
+			<ReactPlayer
+				url="/irish_flute.mp3"
+				width="400px"
+				height="50px"
+				playing={false}
+				controls={true}
+			/>
+			<br/>
 			<h1 style={{ color: "black" }}>Quiz:</h1>
             <div className='quiz'>
                 {showScore ? (
@@ -83,6 +92,16 @@ const Harp = () => {
                     </>
                 )}
 		    </div>
+			<br/>
+			<h1  style={{ color: "black" }}>Vocab</h1>
+			<p style={{ color: "black" }}>
+				wooden flute = flûte traversière <br/>
+				D = Ré(note) <br/>
+				virtuoso = virtuose <br/>
+				fashion = mode <br/>
+				slightly husky = un peu rauque <br/>
+				cocuswood = ébène de Jamaïque<br/>
+			</p>
         </>
     );
 }
