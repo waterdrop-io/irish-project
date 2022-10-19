@@ -1,8 +1,8 @@
 [package]
 name = "irish-project"
-version = "0.0.0"
+version = "1.0.0"
 description = "An application for discover Irish instruments"
-authors = ["you"]
+authors = ["waterdrop <maxime@halbitte.fr>", "xori <xorisuper@gmail.com>"]
 license = ""
 repository = ""
 edition = "2021"

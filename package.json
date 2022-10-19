@@ -1,11 +1,11 @@
 {
   "name": "irish-project",
   "authors": [
-    "Zuygui <maxime@halbitte.fr>",
-    "Xori <xorisuper@gmail.com>"
+    "waterdrop <maxime@halbitte.fr>",
+    "xori <xorisuper@gmail.com>"
   ],
   "license": "GPL-3.0",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
