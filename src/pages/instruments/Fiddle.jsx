@@ -1,42 +1,43 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import ReactPlayer from "react-player";
 
 const Fiddle = () => {
     const questions = [
 		{
-			questionText: 'What is the capital of France?',
+			questionText: 'A violin and a fiddle are ...',
 			answerOptions: [
-				{ answerText: 'New York', isCorrect: false },
-				{ answerText: 'London', isCorrect: false },
-				{ answerText: 'Paris', isCorrect: true },
-				{ answerText: 'Dublin', isCorrect: false },
+				{ answerText: 'of different colours', isCorrect: false },
+				{ answerText: 'similars', isCorrect: false },
+				{ answerText: 'totally different', isCorrect: true },
+				{ answerText: 'different sounds', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'Who is CEO of Tesla?',
+			questionText: 'The use of vibrato is ...',
 			answerOptions: [
-				{ answerText: 'Jeff Bezos', isCorrect: false },
-				{ answerText: 'Elon Musk', isCorrect: true },
-				{ answerText: 'Bill Gates', isCorrect: false },
-				{ answerText: 'Tony Stark', isCorrect: false },
+				{ answerText: 'forbidden', isCorrect: false },
+				{ answerText: 'less common', isCorrect: true },
+				{ answerText: 'mandatory', isCorrect: false },
+				{ answerText: 'not recommended', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'The iPhone was created by which company?',
+			questionText: 'A fiddle player is not a ...',
 			answerOptions: [
-				{ answerText: 'Apple', isCorrect: true },
-				{ answerText: 'Intel', isCorrect: false },
-				{ answerText: 'Amazon', isCorrect: false },
-				{ answerText: 'Microsoft', isCorrect: false },
+				{ answerText: 'Fiddler', isCorrect: true },
+				{ answerText: 'Singer', isCorrect: false },
+				{ answerText: 'Dancer', isCorrect: false },
+				{ answerText: 'Student', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'How many Harry Potter books are there?',
+			questionText: 'The fiddle is mounted ... on a violin',
 			answerOptions: [
-				{ answerText: '1', isCorrect: false },
-				{ answerText: '4', isCorrect: false },
-				{ answerText: '6', isCorrect: false },
-				{ answerText: '7', isCorrect: true },
+				{ answerText: 'tighter than', isCorrect: false },
+				{ answerText: 'higher', isCorrect: false },
+				{ answerText: 'easily than', isCorrect: false },
+				{ answerText: 'differently', isCorrect: true },
 			],
 		},
 	];
@@ -63,7 +64,7 @@ const Fiddle = () => {
 			<br />
 			<h1  style={{ color: "black" }}>Audio</h1>
 			<ReactPlayer
-				url="/irish_flute.mp3"
+				url="/fiddle.mp3"
 				width="400px"
 				height="50px"
 				playing={false}
@@ -95,13 +96,14 @@ const Fiddle = () => {
 			<br/>
 			<h1  style={{ color: "black" }}>Vocab</h1>
 			<p style={{ color: "black" }}>
-				wooden flute = flûte traversière <br/>
-				D = Ré(note) <br/>
-				virtuoso = virtuose <br/>
-				fashion = mode <br/>
-				slightly husky = un peu rauque <br/>
-				cocuswood = ébène de Jamaïque<br/>
+				fiddle = violon irlandais <br/>
+				no way comparable = ne sont pas comparable <br/>
+				bow = ici, l'archet <br/>
+				fast tunes = airs rapides <br/>
+				mounted = monté <br/>
+				hands = mains<br/>
 			</p>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Morris_fiddler_-_Festivals_of_Winds%2C_2012.jpg/187px-Morris_fiddler_-_Festivals_of_Winds%2C_2012.jpg" />
         </>
     );
 }

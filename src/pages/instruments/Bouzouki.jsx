@@ -5,39 +5,39 @@ import ReactPlayer from "react-player";
 const Bouzouki = () => {
     const questions = [
 		{
-			questionText: 'What is the capital of France?',
+			questionText: 'What kind of music is it the main instrument of today?',
 			answerOptions: [
-				{ answerText: 'New York', isCorrect: false },
-				{ answerText: 'London', isCorrect: false },
-				{ answerText: 'Paris', isCorrect: true },
-				{ answerText: 'Dublin', isCorrect: false },
+				{ answerText: 'Metal', isCorrect: false },
+				{ answerText: 'Rap US', isCorrect: false },
+				{ answerText: 'Laïko', isCorrect: true },
+				{ answerText: 'rebetiko', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'Who is CEO of Tesla?',
+			questionText: 'In what country is it popular?',
 			answerOptions: [
-				{ answerText: 'Jeff Bezos', isCorrect: false },
-				{ answerText: 'Elon Musk', isCorrect: true },
-				{ answerText: 'Bill Gates', isCorrect: false },
-				{ answerText: 'Tony Stark', isCorrect: false },
+				{ answerText: 'France', isCorrect: false },
+				{ answerText: 'Greece', isCorrect: true },
+				{ answerText: 'Spain', isCorrect: false },
+				{ answerText: 'Ireland', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'The iPhone was created by which company?',
+			questionText: 'What material are its strings made of?',
 			answerOptions: [
-				{ answerText: 'Apple', isCorrect: true },
-				{ answerText: 'Intel', isCorrect: false },
-				{ answerText: 'Amazon', isCorrect: false },
-				{ answerText: 'Microsoft', isCorrect: false },
+				{ answerText: 'Steel', isCorrect: true },
+				{ answerText: 'Wood', isCorrect: false },
+				{ answerText: 'Plastic', isCorrect: false },
+				{ answerText: 'Water', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'How many Harry Potter books are there?',
+			questionText: 'What are the two types of bouzouki?',
 			answerOptions: [
-				{ answerText: '1', isCorrect: false },
-				{ answerText: '4', isCorrect: false },
-				{ answerText: '6', isCorrect: false },
-				{ answerText: '7', isCorrect: true },
+				{ answerText: 'trachirdi and titricharda', isCorrect: false },
+				{ answerText: 'tracharda and tatracharda', isCorrect: false },
+				{ answerText: 'trolololo and tralalala', isCorrect: false },
+				{ answerText: 'trichordo and tetrachordo', isCorrect: true },
 			],
 		},
 	];
@@ -64,7 +64,7 @@ const Bouzouki = () => {
 			<br />
 			<h1  style={{ color: "black" }}>Audio</h1>
 			<ReactPlayer
-				url="/irish_flute.mp3"
+				url="/bouzouki.mp3"
 				width="400px"
 				height="50px"
 				playing={false}
@@ -96,13 +96,13 @@ const Bouzouki = () => {
 			<br/>
 			<h1  style={{ color: "black" }}>Vocab</h1>
 			<p style={{ color: "black" }}>
-				wooden flute = flûte traversière <br/>
-				D = Ré(note) <br/>
-				virtuoso = virtuose <br/>
-				fashion = mode <br/>
-				slightly husky = un peu rauque <br/>
-				cocuswood = ébène de Jamaïque<br/>
+				also spelled = également orthographié <br/>
+				music instrument = instrument de musique <br/>
+				refugees = réfugiés <br/>
+				neck = ici, manche <br/>
+				popular = populaire <br/>
 			</p>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Bouzouki_tetrachordo.jpg/250px-Bouzouki_tetrachordo.jpg" />
         </>
     );
 }

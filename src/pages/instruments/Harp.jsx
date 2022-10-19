@@ -1,42 +1,43 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import ReactPlayer from "react-player";
 
 const Harp = () => {
     const questions = [
 		{
 			questionText: 'What is the capital of France?',
 			answerOptions: [
-				{ answerText: 'New York', isCorrect: false },
-				{ answerText: 'London', isCorrect: false },
-				{ answerText: 'Paris', isCorrect: true },
-				{ answerText: 'Dublin', isCorrect: false },
+				{ answerText: 'Wind', isCorrect: false },
+				{ answerText: 'Percussion', isCorrect: false },
+				{ answerText: 'Stringed', isCorrect: true },
+				{ answerText: 'Struck', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'Who is CEO of Tesla?',
+			questionText: 'How are strings played?',
 			answerOptions: [
-				{ answerText: 'Jeff Bezos', isCorrect: false },
-				{ answerText: 'Elon Musk', isCorrect: true },
-				{ answerText: 'Bill Gates', isCorrect: false },
-				{ answerText: 'Tony Stark', isCorrect: false },
+				{ answerText: 'Struck', isCorrect: false },
+				{ answerText: 'Plucked', isCorrect: true },
+				{ answerText: 'Cut', isCorrect: false },
+				{ answerText: 'Crushed', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'The iPhone was created by which company?',
+			questionText: 'How is it arranged?',
 			answerOptions: [
-				{ answerText: 'Apple', isCorrect: true },
-				{ answerText: 'Intel', isCorrect: false },
-				{ answerText: 'Amazon', isCorrect: false },
-				{ answerText: 'Microsoft', isCorrect: false },
+				{ answerText: 'Angled', isCorrect: true },
+				{ answerText: 'Straight', isCorrect: false },
+				{ answerText: 'Upside down', isCorrect: false },
+				{ answerText: 'Horizontal', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'How many Harry Potter books are there?',
+			questionText: 'How is it played?',
 			answerOptions: [
-				{ answerText: '1', isCorrect: false },
-				{ answerText: '4', isCorrect: false },
-				{ answerText: '6', isCorrect: false },
-				{ answerText: '7', isCorrect: true },
+				{ answerText: 'By doing a salto', isCorrect: false },
+				{ answerText: 'Dancing', isCorrect: false },
+				{ answerText: 'Running', isCorrect: false },
+				{ answerText: 'Many ways', isCorrect: true },
 			],
 		},
 	];
@@ -63,7 +64,7 @@ const Harp = () => {
 			<br />
 			<h1  style={{ color: "black" }}>Audio</h1>
 			<ReactPlayer
-				url="/irish_flute.mp3"
+				url="/harp.mp3"
 				width="400px"
 				height="50px"
 				playing={false}
@@ -95,13 +96,14 @@ const Harp = () => {
 			<br/>
 			<h1  style={{ color: "black" }}>Vocab</h1>
 			<p style={{ color: "black" }}>
-				wooden flute = flûte traversière <br/>
-				D = Ré(note) <br/>
-				virtuoso = virtuose <br/>
-				fashion = mode <br/>
-				slightly husky = un peu rauque <br/>
-				cocuswood = ébène de Jamaïque<br/>
+				sitting = assis <br/>
+				plucked = pincées(note) <br/>
+				shape = forme <br/>
+				triangular = triangulaire <br/>
+				rows = rangées, lignes <br/>
+				soudboard = ici, table d'harmonie<br/>
 			</p>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Harp.png/200px-Harp.png"/>
         </>
     );
 }
